@@ -1,3 +1,10 @@
+# Original README below
+
+This project is for testing adding Angular 2 to an Angular 1 application.
+
+
+# Original README
+
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
