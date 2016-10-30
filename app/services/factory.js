@@ -1,7 +1,18 @@
 'use strict';
+/*
+ * New hotness
+ */
+// use uA to add providers
+// upgradeAdapter.addProvider(ng.http.HTTP_PROVIDERS);
 
-angular.module('myApp.factory', [])
-.factory('factory', ['$http', function($http){
+// var factoryService
+
+
+/*
+ * Busted ass old code
+ */
+angular.module('myApp.factoryService', [])
+.factory('factoryService', ['$http', function($http){
   return {
     getNews: function() {
       return $http.get('http://weather.com').then(
@@ -12,3 +23,4 @@ angular.module('myApp.factory', [])
     }
   }
 }]);
+
