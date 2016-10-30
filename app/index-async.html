@@ -40,8 +40,9 @@
       'components/version/interpolate-filter.js',
     ], function() {
       // when all is done, execute bootstrap angular application
+      var upgradeAdapter = new ng.upgrade.UpgradeAdapter();
       angular.element(document.body).ready(function() {
-        angular.bootstrap(document, ['myApp']);
+        upgradeAdapter.bootstrap(document, ['myApp']);
       });
     });
   </script>
