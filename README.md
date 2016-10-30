@@ -2,6 +2,16 @@
 
 This project is for testing adding Angular 2 to an Angular 1 application.
 
+I had to do this to get the node_modules to be pulled in correctly. I am ashamed and don't feel like thinking. --brendan
+```
+cp -r node_modules/ app/node_modules
+```
+
+
+Resources: 
+[codelord service upgrade/](http://www.codelord.net/2016/01/07/adding-the-first-angular-2-service-to-your-angular-1-app/)
+
+[codelord component upgrade/](http://www.codelord.net/2016/01/14/adding-the-first-angular-2-component-to-your-angular-1-app/)
 
 # Original README
 
