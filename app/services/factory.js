@@ -14,14 +14,14 @@ var factoryService = ng.core.
   Class({
     // fake $http injection
     constructor: [ng.http.Http, function(http) {
-      // this.http = http;
+      this.http = http;
     }],
     getNews: function() {
-      // return this.http.get('http://weather.com').map(
-      //   function(res) {
-      //     return res.json();
-      //   }
-      // ).toPromise();
+      return this.http.get('http://weather.com').map(
+        function(res) {
+          return res.json();
+        }
+      ).toPromise();
     }
   });
 
