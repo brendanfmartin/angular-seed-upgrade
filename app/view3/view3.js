@@ -11,6 +11,6 @@ angular.module('myApp.view3', ['ngRoute'])
 
 .controller('View3Ctrl', ['factory',  function(factory) {
   factory.getNews().then(data => {
-    console.log(data);
+    console.info('successful api call');
   })
 }]);
